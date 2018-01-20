@@ -3,7 +3,7 @@
 CAT_ADDR=0x50000
 MELODY_ADDR=0xa0000
 
-ESPPORT ?= /dev/cu.usbmodem1411
+ESPPORT ?= /dev/cu.usbserial
 ESPBAUD ?= 115200
 
 FIRMWARE_BIN=.pioenvs/esp01_1m/firmware.bin
@@ -47,7 +47,7 @@ flash_cat: target/cat_frames.bin
 	esptool.py -p $(ESPPORT) --baud $(ESPBAUD) write_flash $(CAT_ADDR) target/cat_frames.bin
 
 monitor:
-	 miniterm.py --raw --eol LF $(ESPPORT) $(ESPBAUD)
+	 miniterm.py --raw --eol LF $(ESPPORT) 921600
 
 mem_layout: $(FIRMWARE_BIN) target/cat_frames.bin target/melody.bin
 	python tools/mem_layout.py $(FIRMWARE_BIN) target/cat_frames.bin target/melody.bin

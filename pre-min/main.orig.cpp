@@ -52,7 +52,7 @@ void load_melody() {
 }
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(921600);
   last_hop = millis();
   clear_stats();
   wifi_setup();
