@@ -4,7 +4,7 @@
 
 ![Demo without audio](img/demo.gif)
 
-[** Watch On Youtube **](https://www.youtube.com/watch?v=J-RLWhml-Xg)
+[*Watch On Youtube*](https://www.youtube.com/watch?v=J-RLWhml-Xg)
 
 
 A Nyan Cat wifi traffic visualisation. Depicts each of the 13 2.4GHz wifi
