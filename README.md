@@ -1,4 +1,4 @@
-## CCC1718 - Nyan WIFI
+## CCC1718 - Nyan WIFI For ESP8266
 
 **In Just 1352 bytes**
 
@@ -7,22 +7,24 @@
 [*Watch On Youtube*](https://www.youtube.com/watch?v=J-RLWhml-Xg)
 
 
-A Nyan Cat wifi traffic visualisation. Depicts each of the 13 2.4GHz wifi
-channels wifi traffic as part of the rainbow trail behind the cat.
+A Nyan Cat wifi traffic visualisation. Depicts each of the 13 2.4GHz
+channels traffic as the rainbow trail behind the cat. The noisier the channel, the closer to red the colour goes!
+
+Wifi traffic capture is done by putting the ESP8266 WiFI into monitor mode, and capturing packets.
 
 In addition, plays Nyan Cat theme song out of GPIO 3.
 
-The visualisation is intended to be run on an ESP8266-01, but I imagine it will
+The visualisation is intended to be run on an [ESP8266-01](https://www.sparkfun.com/products/13678), but I imagine it will
 happily port to other variants of the ESP8266.
 
 Using no libraries other than the platform provided by [PlatformIO](http://platformio.org/) / [ESP8266Arduino](https://github.com/esp8266/Arduino)
 
 Pre-minified source exists in [`pre-min/`](pre-min/)
-  - main.orig.cpp: The OG code. Non minified, no symbols renamed
-  - min.min1.cpp: The OG code with renamed symbols
+  - `main.orig.cpp`: The OG code. Non minified, no symbols renamed
+  - `min.min1.cpp`: The OG code with renamed symbols
 
 Minified source exists in [`src/`](src/)
-  - main.cpp: Renamed symbols, and minified via [cminify](https://github.com/Scylardor/cminify).
+  - `main.cpp`: Renamed symbols, and minified via [cminify](https://github.com/Scylardor/cminify).
 
 ## Resources
 
