@@ -24,7 +24,7 @@ Pre-minified source exists in [`pre-min/`](pre-min/)
   - `min.min1.cpp`: The OG code with renamed symbols
 
 Minified source exists in [`src/`](src/)
-  - `main.cpp`: Renamed symbols, and minified via [cminify](https://github.com/Scylardor/cminify).
+  - `main.min2.cpp`: Renamed symbols, and minified via [cminify](https://github.com/Scylardor/cminify).
 
 ## Resources
 
